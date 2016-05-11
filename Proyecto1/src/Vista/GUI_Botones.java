@@ -7,7 +7,6 @@ package Vista;
 
 import Controlador.Controlador_FRM_Cursos;
 import Controlador.Controlador_FRM_Estudiantes;
-import Controlador.Controlador_FRM_Login;
 import Controlador.Controlador_FRM_Matricula;
 
 /**
@@ -22,7 +21,6 @@ public class GUI_Botones extends javax.swing.JPanel {
     Controlador_FRM_Estudiantes controlador;
     Controlador_FRM_Cursos controladorCursos;
     Controlador_FRM_Matricula controladorMatricula;
-    Controlador_FRM_Login controladorLogin;
     
     public GUI_Botones() {
         initComponents();
@@ -52,14 +50,6 @@ public class GUI_Botones extends javax.swing.JPanel {
         this.btn_Eliminar.addActionListener(controlador);
     }
     
-    public void agregarEventos(Controlador_FRM_Login controlador)
-    {
-        this.controladorLogin=controlador;
-        this.btn_Consultar.addActionListener(controlador);
-        this.btn_Agregar.addActionListener(controlador);
-        this.btn_Modificar.addActionListener(controlador);
-        this.btn_Eliminar.addActionListener(controlador);
-    }
     public void estadoInicial()
     {
         this.btn_Agregar.setEnabled(false);

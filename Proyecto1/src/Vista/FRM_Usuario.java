@@ -5,7 +5,6 @@
  */
 package Vista;
 
-import Controlador.Controlador_FRM_Login;
 
 /**
  *
@@ -17,11 +16,9 @@ public class FRM_Usuario extends javax.swing.JFrame {
      * Creates new form FRM_Usuarios
      */
     
-    Controlador_FRM_Login controlador;
     
     public FRM_Usuario() {
         initComponents();
-        this.gUI_Botones1.agregarEventos(controlador);
     }
     
 
