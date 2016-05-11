@@ -24,8 +24,8 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="btn_Modificar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="btn_Eliminar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="21" max="32767" attributes="0"/>
+              <Component id="btn_Eliminar" min="-2" pref="56" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -33,13 +33,18 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="btn_Consultar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn_Agregar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn_Modificar" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btn_Eliminar" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btn_Eliminar" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btn_Consultar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_Agregar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btn_Modificar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace pref="14" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -72,7 +77,7 @@
     <Component class="javax.swing.JButton" name="btn_Eliminar">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/img/eliminar.png"/>
+          <Image iconType="3" name="/img/ELIMINAR (2).png"/>
         </Property>
         <Property name="actionCommand" type="java.lang.String" value="Eliminar"/>
       </Properties>

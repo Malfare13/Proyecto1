@@ -11,14 +11,14 @@ import Controlador.Controlador_FRM_Cursos;
  *
  * @author tecnologiamultimedia
  */
-public class FRM_MantenimientoCursos extends javax.swing.JFrame {
+public class FRM_Cursos extends javax.swing.JFrame {
 
     /**
      * Creates new form FRM_MantenimientoCursos
      */
     public Controlador_FRM_Cursos controlador;
     
-    public FRM_MantenimientoCursos() {
+    public FRM_Cursos() {
         initComponents();
         controlador = new Controlador_FRM_Cursos(this);
         this.gUI_Botones1.agregarEventos(controlador);

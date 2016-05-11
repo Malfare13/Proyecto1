@@ -66,7 +66,7 @@ public class FRM_MenuPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jl_FondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo.jpg"))); // NOI18N
+        jl_FondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/12168913_10206245558445573_647036421_o.jpg"))); // NOI18N
 
         jm_Archivo.setText("Archivo");
 
@@ -95,11 +95,11 @@ public class FRM_MenuPrincipal extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jl_FondoMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 963, Short.MAX_VALUE)
+            .addComponent(jl_FondoMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jl_FondoMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 395, Short.MAX_VALUE)
+            .addComponent(jl_FondoMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();

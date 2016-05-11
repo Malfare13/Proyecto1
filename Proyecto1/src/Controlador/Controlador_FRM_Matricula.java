@@ -8,7 +8,7 @@ package Controlador;
 import Modelo.MetodosCursos;
 import Modelo.MetodosEstudiantes;
 import Modelo.MetodosMatricula;
-import Vista.FRM_MantenimientoCursos;
+import Vista.FRM_Cursos;
 import Vista.FRM_Estudiantes;
 import Vista.FRM_Matricula;
 import java.awt.event.ActionEvent;
@@ -27,7 +27,7 @@ public class Controlador_FRM_Matricula implements ActionListener{
     boolean encontroEstudiante=false; 
     boolean encontroCurso=false;
     
-    public Controlador_FRM_Matricula(FRM_Estudiantes mantenimientoEstudiantes,FRM_MantenimientoCursos mantenimientoCursos,FRM_Matricula frm_Matricula)
+    public Controlador_FRM_Matricula(FRM_Estudiantes mantenimientoEstudiantes,FRM_Cursos mantenimientoCursos,FRM_Matricula frm_Matricula)
     {
         this.metodosCursos=mantenimientoCursos.controlador.metodos;
         this.metodosEstudiantes=mantenimientoEstudiantes.controlador_FRM_Estudiantes.metodos;

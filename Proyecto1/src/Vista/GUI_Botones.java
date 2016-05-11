@@ -82,7 +82,7 @@ public class GUI_Botones extends javax.swing.JPanel {
         btn_Modificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/modificar.png"))); // NOI18N
         btn_Modificar.setActionCommand("Modificar");
 
-        btn_Eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/eliminar.png"))); // NOI18N
+        btn_Eliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/ELIMINAR (2).png"))); // NOI18N
         btn_Eliminar.setActionCommand("Eliminar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -97,19 +97,22 @@ public class GUI_Botones extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_Modificar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btn_Eliminar)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addComponent(btn_Eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_Consultar)
-                    .addComponent(btn_Agregar)
-                    .addComponent(btn_Modificar)
-                    .addComponent(btn_Eliminar))
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btn_Eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btn_Consultar)
+                            .addComponent(btn_Agregar)
+                            .addComponent(btn_Modificar))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 

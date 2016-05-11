@@ -6,7 +6,7 @@
 package Controlador;
 
 import Modelo.MetodosCursos;
-import Vista.FRM_MantenimientoCursos;
+import Vista.FRM_Cursos;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -16,9 +16,9 @@ import java.awt.event.ActionListener;
  */
 public class Controlador_FRM_Cursos implements ActionListener{
     
-    FRM_MantenimientoCursos frm_MantenimientoCursos;
+    FRM_Cursos frm_MantenimientoCursos;
     public MetodosCursos metodos;
-    public Controlador_FRM_Cursos(FRM_MantenimientoCursos frm_MantenimientoCursos)
+    public Controlador_FRM_Cursos(FRM_Cursos frm_MantenimientoCursos)
     {
         this.frm_MantenimientoCursos= frm_MantenimientoCursos;
         metodos = new MetodosCursos();

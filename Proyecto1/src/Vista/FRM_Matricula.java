@@ -22,7 +22,7 @@ public class FRM_Matricula extends javax.swing.JFrame {
     
     Controlador_FRM_Matricula controlador;
     
-    public FRM_Matricula(FRM_Estudiantes mantenimientoEstudiantes,FRM_MantenimientoCursos mantenimientoCursos) {
+    public FRM_Matricula(FRM_Estudiantes mantenimientoEstudiantes,FRM_Cursos mantenimientoCursos) {
         initComponents();
         controlador=new Controlador_FRM_Matricula(mantenimientoEstudiantes,mantenimientoCursos,this);
         modelo=new DefaultTableModel();
