@@ -17,15 +17,15 @@ import java.awt.event.ActionListener;
  */
 public class Controlador_FRM_MenuPrincipal implements ActionListener{
     
-    FRM_Estudiantes mantenimientoEstudiantes;
-    FRM_Cursos mantenimientoCursos;
-    FRM_Matricula matricula;
+    FRM_Estudiantes ventanaEstudiantes;
+    FRM_Cursos ventanaCursos;
+    FRM_Matricula ventanaMatricula;
     
     public Controlador_FRM_MenuPrincipal()
     {
-        mantenimientoEstudiantes=new FRM_Estudiantes();
-        mantenimientoCursos=new FRM_Cursos();
-        matricula= new FRM_Matricula(mantenimientoEstudiantes,mantenimientoCursos);
+        ventanaEstudiantes=new FRM_Estudiantes();
+        ventanaCursos=new FRM_Cursos();
+        ventanaMatricula= new FRM_Matricula(ventanaEstudiantes,ventanaCursos);
     }
     
     public void actionPerformed(ActionEvent e)
@@ -36,17 +36,21 @@ public class Controlador_FRM_MenuPrincipal implements ActionListener{
         }
         if(e.getActionCommand().equals("Estudiantes"))
         {
-            this.mantenimientoEstudiantes.setVisible(true);
+            this.ventanaEstudiantes.setVisible(true);
+            this.ventanaEstudiantes.setLocationRelativeTo(null);
+          
             
         }
         if(e.getActionCommand().equals("Cursos"))
         {
-            this.mantenimientoCursos.setVisible(true);
+            this.ventanaCursos.setVisible(true);
+            this.ventanaCursos.setLocationRelativeTo(null);
         }
         if(e.getActionCommand().equals("Matricula"))
         {
-            this.matricula.setVisible(true);
-            this.matricula.colocarCodigo();
+            this.ventanaMatricula.setVisible(true);
+            this.ventanaMatricula.setLocationRelativeTo(null);
+            this.ventanaMatricula.colocarCodigo();
         }
     
     }
