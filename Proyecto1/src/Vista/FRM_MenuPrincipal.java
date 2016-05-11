@@ -5,17 +5,33 @@
  */
 package Vista;
 
+import Controlador.Controlador_FRM_MenuPrincipal;
+
 /**
  *
- * @author Angelica
+ * @author tecnologiamultimedia
  */
 public class FRM_MenuPrincipal extends javax.swing.JFrame {
 
     /**
-     * Creates new form MenuPrincipal
+     * Creates new form FRM_MenuPrincipal
      */
+    
+    Controlador_FRM_MenuPrincipal controlador_FRM_MenuPrincipal;
+    
     public FRM_MenuPrincipal() {
         initComponents();
+        this.setLocation(100, 100);
+        controlador_FRM_MenuPrincipal = new Controlador_FRM_MenuPrincipal();
+        
+        agregarEventos();
+    }  
+    public void agregarEventos()
+    {
+        this.jm_Salir.addActionListener(controlador_FRM_MenuPrincipal);
+        this.jm_Estudiantes.addActionListener(controlador_FRM_MenuPrincipal);
+        this.jm_Cursos.addActionListener(controlador_FRM_MenuPrincipal);
+        this.jm_Matricula.addActionListener(controlador_FRM_MenuPrincipal);
     }
 
     /**
@@ -27,17 +43,63 @@ public class FRM_MenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu5 = new javax.swing.JMenu();
+        jMenu6 = new javax.swing.JMenu();
+        jl_FondoMenuPrincipal = new javax.swing.JLabel();
+        jm_MenuPrincipal = new javax.swing.JMenuBar();
+        jm_Archivo = new javax.swing.JMenu();
+        jm_Salir = new javax.swing.JMenuItem();
+        jm_Mantenimientos = new javax.swing.JMenu();
+        jm_Estudiantes = new javax.swing.JMenuItem();
+        jm_Cursos = new javax.swing.JMenuItem();
+        jm_Matricula = new javax.swing.JMenuItem();
+
+        jMenuItem1.setText("jMenuItem1");
+
+        jMenu3.setText("jMenu3");
+
+        jMenu5.setText("jMenu5");
+
+        jMenu6.setText("jMenu6");
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jl_FondoMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo.jpg"))); // NOI18N
+
+        jm_Archivo.setText("Archivo");
+
+        jm_Salir.setText("Salir");
+        jm_Archivo.add(jm_Salir);
+
+        jm_MenuPrincipal.add(jm_Archivo);
+
+        jm_Mantenimientos.setText("Mantenimientos");
+
+        jm_Estudiantes.setText("Estudiantes");
+        jm_Mantenimientos.add(jm_Estudiantes);
+
+        jm_Cursos.setText("Cursos");
+        jm_Mantenimientos.add(jm_Cursos);
+
+        jm_Matricula.setText("Matrícula");
+        jm_Matricula.setActionCommand("Matricula");
+        jm_Mantenimientos.add(jm_Matricula);
+
+        jm_MenuPrincipal.add(jm_Mantenimientos);
+
+        setJMenuBar(jm_MenuPrincipal);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jl_FondoMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 963, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jl_FondoMenuPrincipal, javax.swing.GroupLayout.DEFAULT_SIZE, 395, Short.MAX_VALUE)
         );
 
         pack();
@@ -80,5 +142,17 @@ public class FRM_MenuPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu5;
+    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JLabel jl_FondoMenuPrincipal;
+    private javax.swing.JMenu jm_Archivo;
+    private javax.swing.JMenuItem jm_Cursos;
+    private javax.swing.JMenuItem jm_Estudiantes;
+    private javax.swing.JMenu jm_Mantenimientos;
+    private javax.swing.JMenuItem jm_Matricula;
+    private javax.swing.JMenuBar jm_MenuPrincipal;
+    private javax.swing.JMenuItem jm_Salir;
     // End of variables declaration//GEN-END:variables
 }
