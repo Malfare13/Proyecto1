@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author tecnologiamultimedia
+ * @author Angelica
  */
 public class MetodosEstudiantes {
     

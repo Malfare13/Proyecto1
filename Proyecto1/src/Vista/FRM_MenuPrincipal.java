@@ -9,7 +9,7 @@ import Controlador.Controlador_FRM_MenuPrincipal;
 
 /**
  *
- * @author tecnologiamultimedia
+ * @author Angelica
  */
 public class FRM_MenuPrincipal extends javax.swing.JFrame {
 

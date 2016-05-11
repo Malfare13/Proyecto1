@@ -26,14 +26,16 @@
               </Group>
               <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jt_Sigla" alignment="0" pref="130" max="32767" attributes="0"/>
-                      <Component id="jt_Nombre" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jt_Horario" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jt_Sigla" alignment="0" min="-2" pref="130" max="-2" attributes="0"/>
+                          <Component id="jcb_Creditos" min="-2" max="-2" attributes="0"/>
+                          <Component id="jt_Horario" alignment="0" pref="186" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                   </Group>
-                  <Component id="jcb_Creditos" min="-2" max="-2" attributes="0"/>
+                  <Component id="jt_Nombre" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="21" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -60,7 +62,7 @@
                   <Component id="jl_Horario" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jt_Horario" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="15" max="32767" attributes="0"/>
+              <EmptySpace pref="43" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -68,22 +70,22 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jl_Sigla">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Sigla"/>
+        <Property name="text" type="java.lang.String" value="Sigla:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_Nombre">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Nombre"/>
+        <Property name="text" type="java.lang.String" value="Nombre:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_Creditos">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Cr&#xe9;ditos"/>
+        <Property name="text" type="java.lang.String" value="Cr&#xe9;ditos:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jl_Horario">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Horario"/>
+        <Property name="text" type="java.lang.String" value="Horario:"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jt_Sigla">

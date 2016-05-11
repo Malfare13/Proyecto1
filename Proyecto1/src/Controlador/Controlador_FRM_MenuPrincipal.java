@@ -13,7 +13,7 @@ import java.awt.event.ActionListener;
 
 /**
  *
- * @author tecnologiamultimedia
+ * @author Angelica
  */
 public class Controlador_FRM_MenuPrincipal implements ActionListener{
     

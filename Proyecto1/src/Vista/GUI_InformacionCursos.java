@@ -7,7 +7,7 @@ package Vista;
 
 /**
  *
- * @author tecnologiamultimedia
+ * @author angelica
  */
 public class GUI_InformacionCursos extends javax.swing.JPanel {
 
@@ -67,13 +67,13 @@ public class GUI_InformacionCursos extends javax.swing.JPanel {
         jt_Horario = new javax.swing.JTextField();
         jcb_Creditos = new javax.swing.JComboBox<>();
 
-        jl_Sigla.setText("Sigla");
+        jl_Sigla.setText("Sigla:");
 
-        jl_Nombre.setText("Nombre");
+        jl_Nombre.setText("Nombre:");
 
-        jl_Creditos.setText("Créditos");
+        jl_Creditos.setText("Créditos:");
 
-        jl_Horario.setText("Horario");
+        jl_Horario.setText("Horario:");
 
         jcb_Creditos.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -90,12 +90,13 @@ public class GUI_InformacionCursos extends javax.swing.JPanel {
                     .addComponent(jl_Horario))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jt_Sigla, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
-                        .addComponent(jt_Nombre)
-                        .addComponent(jt_Horario))
-                    .addComponent(jcb_Creditos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(21, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jt_Sigla, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jcb_Creditos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jt_Horario, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE))
+                        .addContainerGap())
+                    .addComponent(jt_Nombre)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -116,7 +117,7 @@ public class GUI_InformacionCursos extends javax.swing.JPanel {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jl_Horario)
                     .addComponent(jt_Horario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
